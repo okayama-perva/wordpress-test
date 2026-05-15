@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ホワイトホームズ - 大田区地域密着の不動産会社</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Outfit:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-left">
+    <a href="#mv" class="header-logo-link" aria-label="メインビジュアルへ">
+      <img class="header-logo" src="img/logo.svg" alt="ホワイトホームズ" width="56" height="49">
+    </a>
+    <nav class="header-nav">
+      <a href="#">賃貸オーナー様へ</a>
+      <a href="#">空室対策</a>
+      <a href="#">会社概要</a>
+      <a href="#">お知らせ</a>
+    </nav>
+  </div>
+  <div class="header-right">
+    <a href="#" class="header-btn">ご入居者様へ</a>
+    <a href="#" class="header-btn">
+      <img src="img/search.svg" alt="検索">
+      賃貸物件検索
+    </a>
+    <div class="header-btn-tel">
+      <img src="img/Vector.svg" alt="電話" style="width:24px;height:22px;">
+      <div>
+        <div class="tel-num">0120-63-481</div>
+        <div class="tel-hours">9:00-18:00(祝-17:00)</div>
+      </div>
+    </div>
+    <a href="#" class="header-btn-contact">
+      <img src="img/contact.svg" alt="お問い合わせ">
+      お問い合わせ
+    </a>
+    <button class="hamburger" type="button" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <button class="mobile-nav-close" type="button" id="mobileNavClose" aria-label="メニューを閉じる">
+    <span class="mobile-nav-close-icon" aria-hidden="true"></span>
+  </button>
+  <p class="mobile-nav-label">株式会社ホワイトホームズ</p>
+  <div class="mobile-nav-links">
+    <a href="#">賃貸オーナー様へ</a>
+    <a href="#">空室対策</a>
+    <a href="#">会社概要</a>
+    <a href="#">お知らせ</a>
+    <a href="#">ご入居者様へ</a>
+    <a href="#">賃貸物件検索</a>
+  </div>
+  <div class="mobile-nav-tel-block">
+    <div class="mobile-nav-tel">0120-63-481</div>
+    <div class="mobile-nav-hours">9:00-18:00（祝-17:00）</div>
+  </div>
+  <a href="#" class="mobile-nav-contact">お問い合わせ</a>
+</nav>
+
+<!-- MV -->
+<section class="mv" id="mv">
+  <!-- PC MV (desktop/tablet layout) -->
+  <div class="mv-pc">
+    <div class="mv-pc-gradient-bl"></div>
+
+    <!-- 創業54年 image -->
+    <div class="mv-pc-identity">
+      <div class="mv-company-label">株式会社ホワイトホームズ</div>
+      <img class="mv-pc-sogyou-img" src="img/創業54年.png" alt="創業54年">
+    </div>
+
+    <!-- Catchcopy -->
+    <div class="mv-pc-catchcopy">
+      <div class="mv-pc-catch-line mv-pc-catch-deco">
+        <img class="mv-catch-vector" src="img/mv_Vector.png" alt="">
+        <span>不動産の未来を</span>
+      </div>
+      <div class="mv-pc-catch-line"><span>心から思い最適な</span></div>
+      <div class="mv-pc-catch-line mv-pc-catch-full"><span>不動産経営を提供します</span></div>
+    </div>
+
+  </div>
+
+  <!-- SP MV (shown on mobile only) -->
+  <div class="mv-sp-wrap">
+    <!-- Hero photo with gradient overlay -->
+    <div class="mv-sp-hero">
+
+      <!-- 創業54年 image -->
+      <div class="mv-sp-identity">
+        <div class="mv-company-label">株式会社ホワイトホームズ</div>
+        <img class="mv-sp-sogyou-img" src="img/創業54年.png" alt="創業54年">
+      </div>
+
+      <!-- Catchcopy -->
+      <div class="mv-sp-catchcopy">
+        <div class="mv-sp-catch-line mv-sp-catch-deco">
+          <img class="mv-catch-vector" src="img/mv_Vector.png" alt="">
+          <span>不動産の未来を</span>
+        </div>
+        <div class="mv-sp-catch-line"><span>心から思い最適な</span></div>
+        <div class="mv-sp-catch-line"><span>不動産経営を提供します</span></div>
+      </div>
+    </div>
+
+    <!-- Event cards (overlapping hero bottom) -->
+    <div class="mv-sp-events">
+      <div class="mv-sp-event-card">
+        <div class="mv-sp-evt-header">
+          <span class="mv-sp-evt-month">10月</span>
+          <span class="mv-sp-evt-tag">賃貸オーナー様向け</span>
+        </div>
+        <div class="mv-sp-evt-title">
+          <p>不動産経営セミナー開催</p>
+          <p>テーマ：「認知症対策について」</p>
+        </div>
+        <div class="mv-sp-evt-footer">
+          <div class="mv-sp-evt-dates">
+            <span class="mv-sp-evt-date">8.29 (金)</span>
+            <span class="mv-sp-evt-date">9.13 (土)</span>
+          </div>
+          <a href="#" class="mv-sp-evt-link">
+            詳細をみる
+            <img src="img/arrow-circle-right.svg" alt="→">
+          </a>
+        </div>
+        <div class="mv-sp-evt-corner"><img src="img/plus 1.svg" alt="閉じる"></div>
+      </div>
+      <div class="mv-sp-event-card">
+        <div class="mv-sp-evt-header">
+          <span class="mv-sp-evt-month">10月</span>
+          <span class="mv-sp-evt-tag">賃貸オーナー様向け</span>
+        </div>
+        <div class="mv-sp-evt-title">
+          <p>不動産経営セミナー開催</p>
+          <p>テーマ：「認知症対策について」</p>
+        </div>
+        <div class="mv-sp-evt-footer">
+          <div class="mv-sp-evt-dates">
+            <span class="mv-sp-evt-date">8.29 (金)</span>
+            <span class="mv-sp-evt-date">9.13 (土)</span>
+          </div>
+          <a href="#" class="mv-sp-evt-link">
+            詳細をみる
+            <img src="img/arrow-circle-right.svg" alt="→">
+          </a>
+        </div>
+        <div class="mv-sp-evt-corner"><img src="img/plus 1.svg" alt="閉じる"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHITE HOMES BANNER -->
+<div class="scroll-banner" style="background:var(--bg-gray);">
+  <div class="scroll-banner-inner">
+    <span style="color:rgba(255,255,255,0.6);">WHITE HOMES WHITE HOMES WHITE HOMES WHITE HOMES </span>
+    <span style="color:rgba(255,255,255,0.6);">WHITE HOMES WHITE HOMES WHITE HOMES WHITE HOMES </span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+ 
+<section class="about">
+  <div class="about-top">
+    <div class="about-inner">
+      <div class="about-stats-row">
+        <div class="about-stat-card" data-anim>
+          <div>
+            <div class="about-stat-label">ABOUT WHITE HOMES 01</div>
+            <div class="about-stat-title">大田区地域密着</div>
+            <div class="about-stat-num">
+              <span class="lbl">創業</span>
+              <span class="num hl" data-count-to="54">54</span>
+              <span class="lbl">年目</span>
+            </div>
+          </div>
+          <div class="about-stat-img">
+            <img src="img/about-01.png" alt="">
+          </div>
+        </div>
+        <div class="about-stat-card" data-anim style="transition-delay:120ms">
+          <div>
+            <div class="about-stat-label">ABOUT WHITE HOMES 02</div>
+            <div class="about-stat-title">お取り扱い物件</div>
+            <div class="about-stat-num">
+              <span class="num hl" data-count-to="6000" data-format="comma">6,000</span>
+              <span class="lbl">室越</span>
+            </div>
+          </div>
+          <div class="about-stat-img">
+            <img src="img/about-02.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="about-body-row">
+        <div class="about-desc" data-anim>
+          <p>株式会社ホワイトホームズは約半世紀に渡り、地域密着で不動産賃貸管理業を中心にトータルな不動産コンサルティング会社として長く事業を展開してきました。</p>
+          <p>お取り扱い物件も15期連続で増加しており6,000室超、管理物件入居率96〜98％とどちらも高い水準を維持し、さらに進化していきます。</p>
+        </div>
+        <div class="about-stat3" data-anim style="transition-delay:120ms">
+          <div>
+            <div class="about-stat-label">ABOUT WHITE HOMES 03</div>
+            <div class="about-stat-title">管理物件入居率</div>
+            <div class="about-stat-num">
+              <span class="num hl" data-count-to="98.25" data-decimals="2">98.25</span>
+              <span class="lbl" style="font-size:clamp(20px,2.5vw,35px);">%</span>
+            </div>
+            <div class="about-date">2025.5.7現在</div>
+          </div>
+          <div class="about-stat-img">
+            <img src="img/about-03.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-bottom">
+    <div class="about-inner">
+      <div class="about-cta-row">
+        <div class="about-cta-left">
+          <div class="about-catchcopy">私たちは<br>賃貸管理を主軸とした<br>総合不動産会社です。</div>
+          <a href="#" class="btn-outline">
+            会社概要を見る
+            <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect width="24" height="24" rx="12" fill="#E67545"></rect>
+              <path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="currentColor"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="about-cta-photo">
+          <img src="img/about-office.png" alt="オフィス">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS BANNER -->
+<div class="scroll-banner" style="background:#fff;">
+  <div class="scroll-banner-inner">
+    <span style="color:rgba(26,33,54,0.06);">BUSINESS BUSINESS BUSINESS BUSINESS </span>
+    <span style="color:rgba(26,33,54,0.06);">BUSINESS BUSINESS BUSINESS BUSINESS </span>
+  </div>
+</div>
+
+<!-- BUSINESS -->
+<section class="business-wrap">
+  <div class="business-inner">
+    <img src="img/Nav Button.svg" alt="" class="business-nav-btn">
+    <div class="business-top" data-anim>
+      <div class="business-top-left">
+        <div class="section-label">BUSINESS</div>
+        <div class="section-title">業務領域</div>
+        <div class="section-desc">オーナー様一人ひとりに寄り添いたい<br>だから私たちは地域密着でお客様に貢献します。</div>
+      </div>
+      <div class="business-offerings-img">
+        <img src="img/Offerings Container.png" alt="業務領域">
+      </div>
+    </div>
+    <div class="accordion-list" data-anim style="transition-delay:150ms">
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span class="accordion-title">賃貸管理</span>
+          <button class="accordion-btn" onclick="toggleAcc(this)">閉じる <img src="img/accordion-close.svg" alt=""></button>
+        </div>
+        <div class="accordion-body">賃貸管理についての説明文章が入ります。賃貸管理についての説明文章が入ります。賃貸管理についての説明文章が入ります。賃貸管理についての説明文章が入ります。賃貸管理についての説明文章が入ります。賃貸管理についての説明文章が入ります。</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span class="accordion-title">売買仲介・借地管理</span>
+          <button class="accordion-btn" onclick="toggleAcc(this)">詳しく見る <img src="img/accordion-open.svg" alt=""></button>
+        </div>
+        <div class="accordion-body">詳細テキストが入ります。</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span class="accordion-title">区分所有マンション管理・中長期修繕計画</span>
+          <button class="accordion-btn" onclick="toggleAcc(this)">詳しく見る <img src="img/accordion-open.svg" alt=""></button>
+        </div>
+        <div class="accordion-body">詳細テキストが入ります。</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span class="accordion-title">資産の有効活用のご提案</span>
+          <button class="accordion-btn" onclick="toggleAcc(this)">詳しく見る <img src="img/accordion-open.svg" alt=""></button>
+        </div>
+        <div class="accordion-body">詳細テキストが入ります。</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span class="accordion-title">賃貸仲介</span>
+          <button class="accordion-btn" onclick="toggleAcc(this)">詳しく見る <img src="img/accordion-open.svg" alt=""></button>
+        </div>
+        <div class="accordion-body">詳細テキストが入ります。</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span class="accordion-title">リフォーム・リノベーション</span>
+          <button class="accordion-btn" onclick="toggleAcc(this)">詳しく見る <img src="img/accordion-open.svg" alt=""></button>
+        </div>
+        <div class="accordion-body">詳細テキストが入ります。</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span class="accordion-title">相続対策・税務対策</span>
+          <button class="accordion-btn" onclick="toggleAcc(this)">詳しく見る <img src="img/accordion-open.svg" alt=""></button>
+        </div>
+        <div class="accordion-body">詳細テキストが入ります。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRENGTHS -->
+<section class="strengths">
+  <div class="strengths-deco-tl" aria-hidden="true">
+    <img src="img/Strengths_Ellipse.png" alt="">
+  </div>
+  <div class="strengths-deco-lines" aria-hidden="true">
+    <img src="img/Strengths_Ellipse02.png" alt="">
+  </div>
+  <div class="strengths-deco-bl" aria-hidden="true">
+    <img src="img/Strengths_Ellipse03.png" alt="">
+  </div>
+  <div class="strengths-top" data-anim>
+    <div>
+      <div class="section-label">STRENGTHS</div>
+      <div class="section-title">ホワイトホームズの<br>強み</div>
+    </div>
+    <div class="strengths-quote">
+      <em>確かなスキル</em>、<em>誠実なマインド</em>、<em>柔軟なアイディア</em>でオーナー様をトータルサポートいたします。
+    </div>
+  </div>
+
+  <div class="strength-card" data-anim>
+    <div class="strength-card-text">
+      <div class="strength-card-subtitle">街を想い、人に向き合う</div>
+      <div class="strength-card-heading">常にお客様への貢献を追求するプロフェッショナル集団です。</div>
+      <div class="strength-card-body">オーナー様一人ひとりにあわせたオーダーメイド管理をご提案。また、クレーム(サービスリクエスト)対応は基本的に即日対応。必要に応じて現場に赴き、解決に向け対応いたします。</div>
+    </div>
+    <div class="strength-card-img-wrap">
+      <div class="strength-badge" style="top:72px;left:-48px;">お客様第一</div>
+      <div class="strength-card-img">
+        <img src="img/strength-01.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="strength-card-deco" aria-hidden="true"></div>
+  </div>
+
+  <div class="strength-card reverse" data-anim>
+    <div class="strength-card-text">
+      <div class="strength-card-subtitle">収益と資産価値向上の追求</div>
+      <div class="strength-card-heading">オーナー様の大切な資産を守り、育くみ、次世代に繋げます。</div>
+      <div class="strength-card-body">老朽化建物問題への取り組みとして、建替えやリノベ、入札売却などのご提案をしています。特に当社では物件の資産価値を上げるリノベーションのご提案を得意としています。</div>
+    </div>
+    <div class="strength-card-img-wrap">
+      <div class="strength-badge" style="bottom:32px;right:-48px;">サポートいたします</div>
+      <div class="strength-card-img">
+        <img src="img/service02.png" alt="">
+      </div>
+    </div>
+
+    <div class="strength-card-deco" aria-hidden="true"></div>
+  </div>
+
+  <div class="strength-card" data-anim>
+    <div class="strength-card-text">
+      <div class="strength-card-subtitle">弁護士税理士事務所との連携</div>
+      <div class="strength-card-heading">真摯な対応でオーナー様の「将来の安心」も一緒に考えます。</div>
+      <div class="strength-card-body">当社ご契約のオーナー様は、顧問弁護士に60分無料相談が可能。また税理士事務所と提携し、相続税や売却益、賃貸収入の確定申告などのお悩みついて丁寧にヒアリングし対応いたします。</div>
+    </div>
+    <div class="strength-card-img-wrap">
+      <div class="strength-badge" style="top:29px;left:-48px;">些細なことでもお聞きください</div>
+      <div class="strength-card-img">
+        <img src="img/strength-03.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="strength-card-deco" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- SERVICE BANNER -->
+<div class="scroll-banner" style="background:#f2f3ef; padding-top:40px;">
+  <div class="scroll-banner-inner">
+    <span style="color:rgba(26,33,54,0.04);font-weight:100;">SERVICE SERVICE SERVICE SERVICE SERVICE </span>
+    <span style="color:rgba(26,33,54,0.04);font-weight:100;">SERVICE SERVICE SERVICE SERVICE SERVICE </span>
+  </div>
+</div>
+
+<!-- SERVICE -->
+<section class="service-section">
+  <div class="service-inner">
+    <div class="service-image" data-anim>
+      <img src="img/service.jpg" alt="Service Image">
+      <div class="service-img-caption">See what<br>White Homes<br>can do for you!</div>
+    </div>
+    <div class="service-card" data-anim style="transition-delay:120ms">
+      <div class="service-num">01</div>
+      <div class="service-content">
+        <div class="service-text-group">
+          <div class="service-label">資産価値を上げるご提案</div>
+          <div class="service-title">リニューアル・デ・レント</div>
+          <div class="service-desc">
+            <p>説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。</p>
+            <p>説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。説明テキストが入ります。</p>
+          </div>
+        </div>
+        <a href="#" class="btn-outline">賃貸オーナー様向けサービスを詳しく見る <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="12" fill="currentColor"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="currentColor"></path></svg></a>
+      </div>
+      <div class="service-dots">
+        <span class="service-dot active"></span>
+        <span class="service-dot"></span>
+        <span class="service-dot"></span>
+        <span class="service-dot"></span>
+        <span class="service-dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA 1 -->
+<div class="cta-wrap">
+  <div class="cta-deco-ellipse" aria-hidden="true"><img src="img/right-ellipse.png" alt=""></div>
+  <div class="cta-contact-block" data-anim>
+    <div class="cta-contact-bg-text">CONTACT</div>
+    <div class="cta-contact-left">
+      <div class="cta-contact-label">CONTACT</div>
+      <div class="cta-contact-title">ご来店予約</div>
+      <div class="cta-contact-desc">個別無料相談承ります。<br>お気軽にお問い合わせください。</div>
+    </div>
+    <div class="cta-contact-card">
+      <div class="cta-contact-col">
+        <div class="cta-contact-icon-row">
+          <img src="img/cta-tel.svg" alt="電話" width="32" height="32">
+          <span class="cta-contact-icon-label">電話でのお問い合わせ</span>
+        </div>
+        <div class="cta-tel-row">
+          <span class="cta-tel-prefix">TEL.</span>
+          <div class="cta-tel-info">
+            <div class="cta-tel-number">0120-63-481</div>
+            <div class="cta-tel-hours">９:00-18:00（祝-17:00）</div>
+          </div>
+        </div>
+      </div>
+      <div class="cta-contact-col">
+        <div class="cta-contact-icon-row">
+          <img src="img/contact_o.svg" alt="mail" width="32" height="32">
+          <span class="cta-contact-icon-label">メールでのお問い合わせ</span>
+        </div>
+        <a href="#" class="btn-outline">お問い合わせフォームへ <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="12" fill="currentColor"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="currentColor"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEWS -->
+<section class="news-section">
+  <div class="news-bg-rect"></div>
+  <div class="news-watermark"><div class="news-watermark-inner"><span>NEWS NEWS NEWS NEWS NEWS NEWS &nbsp;</span><span>NEWS NEWS NEWS NEWS NEWS NEWS &nbsp;</span></div></div>
+  <div class="news-label-block" data-anim>
+    <div class="section-label">NEWS</div>
+    <div class="news-section-title">お知らせ</div>
+  </div>
+  <div class="news-pickup-block" data-anim style="transition-delay:100ms">
+    <div class="news-pickup-img">
+      <img src="img/news-pickup.jpg" alt="PICK UP">
+      <div class="pickup-badge">PICK UP</div>
+    </div>
+    <div class="news-meta">
+      <span class="news-date">2025.9.5</span>
+      <span class="news-cat">イベント</span>
+    </div>
+    <div class="news-title">不動産オーナー向け相続無料セミナー</div>
+  </div>
+  <div class="news-list-block" data-anim style="transition-delay:200ms">
+    <div class="news-item"><div class="news-item-inner">
+      <div class="news-meta"><span class="news-date">2025.9.5</span><span class="news-cat">イベント</span></div>
+      <div class="news-title">不動産オーナー向け相続無料セミナー</div>
+    </div></div>
+    <div class="news-item"><div class="news-item-inner">
+      <div class="news-meta"><span class="news-date">2025.9.5</span><span class="news-cat">イベント</span></div>
+      <div class="news-title">不動産オーナー向け相続無料セミナー</div>
+    </div></div>
+    <div class="news-item"><div class="news-item-inner">
+      <div class="news-meta"><span class="news-date">2025.9.5</span><span class="news-cat">お知らせ</span></div>
+      <div class="news-title">年末年始休暇のお知らせ</div>
+    </div></div>
+    <a href="#" class="news-more-btn">
+      すべてのお知らせを見る
+      <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="12" fill="currentColor"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="white"></path></svg>
+    </a>
+  </div>
+</section>
+
+<!-- 店舗情報 -->
+<section class="stores">
+  <div class="stores-deco-left" aria-hidden="true"><img src="img/info-ellipes-left.png" alt=""></div>
+  <div class="stores-deco-right" aria-hidden="true"><img src="img/info-ellipse-right.png" alt=""></div>
+  <div class="stores-vert">店舗情報</div>
+  <div class="stores-inner">
+    <div class="store-row" data-anim>
+      <div class="store-info">
+        <div class="store-tags-row">
+          <span class="store-tag-name">本店</span>
+          <a href="#" class="store-tag-link">本店の取り組み <img src="img/arrow-circle-right-white.svg" alt="→"></a>
+        </div>
+        <div class="store-detail">所在地：東京都大田区東嶺町28-11</div>
+        <div class="store-detail">電話番号：03-6410-6801</div>
+        <div class="store-detail">FAX：03-6410-6803</div>
+        <div class="store-detail">営業時間：09:00-18:00（祝日17:00）</div>
+        <div class="store-detail">定休日：年末年始</div>
+        <div class="store-detail">最寄駅：東急池上線 久が原駅 徒歩1分</div>
+        <div class="store-detail">宅建免許番号：東京都知事（14）第22427号</div>
+        <div class="store-photo">
+          <img src="img/store-honten.png" alt="本店">
+        </div>
+      </div>
+      <div class="store-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.9222869858954!2d139.6857172!3d35.580309899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f55601f61e9d%3A0x3779ee8ca6280f7f!2z44CSMTQ1LTAwNzQg5p2x5Lqs6YO95aSn55Sw5Yy65p2x5ba655S677yS77yY4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1775098789193!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="store-row reverse" data-anim style="transition-delay:120ms">
+      <div class="store-info">
+        <div class="store-tags-row">
+          <span class="store-tag-name">鵜の木店</span>
+          <a href="#" class="store-tag-link">鵜の木店の取り組み <img src="img/arrow-circle-right-white.svg" alt="→"></a>
+        </div>
+        <div class="store-detail">所在地：東京都大田区鵜の木2-3-9　1-A</div>
+        <div class="store-detail">電話番号：03-3759-1512</div>
+        <div class="store-detail">FAX：03-3759-1513</div>
+        <div class="store-detail">営業時間：09:00-18:00（祝日17:00）</div>
+        <div class="store-detail">定休日：火曜・水曜</div>
+        <div class="store-detail">最寄駅：東急多摩川線 鵜の木駅 徒歩1分</div>
+        <div class="store-detail">宅建免許番号：東京都知事（14）第22427号</div>
+        <div class="store-photo">
+          <img src="img/store-unoki.png" alt="鵜の木店">
+        </div>
+      </div>
+      <div class="store-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.82008199132522!2d139.68082611424893!3d35.5753974662658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185ff9d80777a7%3A0xa0c8f29cdb72b10f!2z44CSMTQ2LTAwOTEg5p2x5Lqs6YO95aSn55Sw5Yy66bWc44Gu5pyo77yS5LiB55uu77yT4oiS77yZIDEgYQ!5e0!3m2!1sja!2sjp!4v1775098874605!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SNS -->
+<section class="sns-section">
+  <div class="sns-watermark">INSTAGRAM INSTAGRAM</div>
+  <div class="sns-deco sns-deco-vtl"><img src="img/sns-vector-tl.svg" alt=""></div>
+  <div class="sns-deco sns-deco-vtr"><img src="img/sns-vector-tr.svg" alt=""></div>
+  <div class="sns-deco sns-deco-vml"><img src="img/sns-vector-ml.svg" alt=""></div>
+  <div class="sns-deco sns-deco-vmr"><img src="img/sns-vector-mr.svg" alt=""></div>
+  <div class="sns-deco sns-deco-gl"><img src="img/sns-group-l.svg" alt=""></div>
+  <div class="sns-deco sns-deco-gr"><img src="img/sns-group-r.svg" alt=""></div>
+  <div class="sns-title" data-anim>Instagram</div>
+  <div class="sns-cards">
+    <div class="sns-card" data-anim style="transition-delay:100ms">
+      <div class="sns-account-col">
+        <div class="sns-account-header">
+          <img src="img/instagram.svg" alt="Instagram">
+          <div class="sns-account-info">
+            <div class="sns-store-label">本店SNSアカウント</div>
+            <div class="sns-account-name">white__homes</div>
+          </div>
+        </div>
+        <a href="#" class="btn-fill" style="justify-content:center;">本店はこちら <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="12" fill="#fff"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="#E67545"></path></svg></a>
+      </div>
+      <div class="sns-photos">
+        <div class="sns-photo"></div>
+        <div class="sns-photo"></div>
+        <div class="sns-photo"></div>
+      </div>
+    </div>
+    <div class="sns-card" data-anim style="transition-delay:220ms">
+      <div class="sns-account-col">
+        <div class="sns-account-header">
+          <img src="img/instagram.svg" alt="Instagram">
+          <div class="sns-account-info">
+            <div class="sns-store-label">鵜の木店SNSアカウント</div>
+            <div class="sns-account-name">whitehomes_unoki</div>
+          </div>
+        </div>
+        <a href="#" class="btn-fill" style="justify-content:center;">鵜木店はこちら <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="12" fill="#fff"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="#E67545"></path></svg></a>
+      </div>
+      <div class="sns-photos">
+        <div class="sns-photo"></div>
+        <div class="sns-photo"></div>
+        <div class="sns-photo"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 取り組み -->
+<section class="torikumi">
+  <!-- 装飾円 -->
+  <div class="torikumi-circle">
+    <img src="img/torikumi_Ellipse.png" alt="">
+  </div>
+  <!-- 縦タイトル -->
+  <div class="torikumi-title" data-anim>
+    <div class="torikumi-title-col">発展に貢献</div>
+    <div class="torikumi-title-col">街を守り</div>
+  </div>
+  <!-- 右上写真: 鵜の木駅 -->
+  <div class="torikumi-img-tr" data-anim style="transition-delay:100ms">
+    <img src="img/torikumi-unoki.jpg" alt="鵜の木駅">
+  </div>
+  <!-- 下部: 左写真 + 右コンテンツ -->
+  <div class="torikumi-bottom" data-anim style="transition-delay:200ms">
+    <!-- 左下写真: 久が原駅 -->
+    <div class="torikumi-img-bl">
+      <img src="img/torikumi-kugahara.jpg" alt="久が原駅">
+    </div>
+    <!-- 右コンテンツ -->
+    <div class="torikumi-content">
+      <div class="torikumi-desc-area">
+        <div class="torikumi-desc">地域社会に「必要とされる企業へ」<br>地元に密着し清掃・イベントに協力しています。</div>
+        <a href="#" class="btn-fill">
+          ホワイトホームズの取り組み
+          <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="12" fill="#fff"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="#E67545"></path></svg>
+        </a>
+      </div>
+      <div class="torikumi-cards">
+        <!-- mail magazine カード -->
+        <div class="torikumi-card torikumi-card-mail">
+          <div class="torikumi-card-emoji">🗞️</div>
+          <div class="torikumi-card-body">
+            <div class="torikumi-card-label">mail magazine</div>
+            <div class="torikumi-card-title">情報を逃さずキャッチ！<br>先行受付中</div>
+          </div>
+          <a href="#" class="btn-outline" style="width:100%;justify-content:center;">メルマガ会員登録 <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width:24px;height:24px;flex-shrink:0;"><rect width="24" height="24" rx="12" fill="currentColor"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="currentColor"></path></svg></a>
+        </div>
+        <!-- blog カード -->
+        <div class="torikumi-card torikumi-card-blog">
+          <div class="torikumi-card-emoji">👀</div>
+          <div class="torikumi-card-body">
+            <div class="torikumi-card-label">blog</div>
+            <div class="torikumi-card-title">ホワイトホームズの<br>日常を覗き見</div>
+          </div>
+          <a href="#" class="btn-outline" style="width:100%;justify-content:center;">ブログ（準備中） <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width:24px;height:24px;flex-shrink:0;"><rect width="24" height="24" rx="12" fill="currentColor"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="currentColor"></path></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA 2 -->
+<div class="cta-wrap">
+  <div class="cta-contact-block" data-anim>
+    <div class="cta-contact-bg-text">CONTACT</div>
+    <div class="cta-contact-left">
+      <div class="cta-contact-label">CONTACT</div>
+      <div class="cta-contact-title">ご来店予約</div>
+      <div class="cta-contact-desc">個別無料相談承ります。<br>お気軽にお問い合わせください。</div>
+    </div>
+    <div class="cta-contact-card">
+      <div class="cta-contact-col">
+        <div class="cta-contact-icon-row">
+          <img src="img/cta-tel.svg" alt="電話" width="32" height="32">
+          <span class="cta-contact-icon-label">電話でのお問い合わせ</span>
+        </div>
+        <div class="cta-tel-row">
+          <span class="cta-tel-prefix">TEL.</span>
+          <div class="cta-tel-info">
+            <div class="cta-tel-number">0120-63-481</div>
+            <div class="cta-tel-hours">９:00-18:00（祝-17:00）</div>
+          </div>
+        </div>
+      </div>
+      <div class="cta-contact-col">
+        <div class="cta-contact-icon-row">
+          <img src="img/contact_o.svg" alt="mail" width="32" height="32">
+          <span class="cta-contact-icon-label">メールでのお問い合わせ</span>
+        </div>
+        <a href="#" class="btn-outline">お問い合わせフォームへ <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="12" fill="currentColor"></rect><path d="M15.92 12.3802C15.8724 12.5029 15.801 12.6151 15.71 12.7102L12.71 15.7102C12.617 15.8039 12.5064 15.8783 12.3846 15.9291C12.2627 15.9798 12.132 16.006 12 16.006C11.868 16.006 11.7373 15.9798 11.6154 15.9291C11.4936 15.8783 11.383 15.8039 11.29 15.7102C11.1963 15.6172 11.1219 15.5066 11.0711 15.3848C11.0203 15.2629 10.9942 15.1322 10.9942 15.0002C10.9942 14.8682 11.0203 14.7375 11.0711 14.6156C11.1219 14.4938 11.1963 14.3831 11.29 14.2902L12.59 13.0002H9C8.73478 13.0002 8.48043 12.8948 8.29289 12.7073C8.10536 12.5198 8 12.2654 8 12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1055 8.73478 11.0002 9 11.0002H12.59L11.29 9.71019C11.1017 9.52188 10.9959 9.26649 10.9959 9.00019C10.9959 8.73388 11.1017 8.47849 11.29 8.29019C11.4783 8.10188 11.7337 7.99609 12 7.99609C12.2663 7.99609 12.5217 8.10188 12.71 8.29019L15.71 11.2902C15.801 11.3853 15.8724 11.4974 15.92 11.6202C16.02 11.8636 16.02 12.1367 15.92 12.3802Z" fill="currentColor"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer-wrap">
+  <footer>
+    <!-- 背景ウォーターマーク -->
+    <p class="footer-watermark">WHITEHOMES</p>
+    <!-- コンテンツ -->
+    <div class="footer-content">
+      <div class="footer-links-row">
+        <!-- 会社名・ナビ・媒体ロゴ -->
+        <div class="footer-company-block">
+          <div>
+            <a href="#mv" class="footer-company-name">株式会社ホワイトホームズ</a>
+            <div class="footer-nav">
+              <div class="footer-nav-col">
+                <a href="#">賃貸オーナー様へ</a>
+                <a href="#">空室対策</a>
+                <a href="#">会社概要</a>
+                <a href="#">お知らせ</a>
+              </div>
+              <div class="footer-nav-col">
+                <a href="#">賃貸物件検索</a>
+                <a href="#">お問い合わせ</a>
+                <a href="#">ご入居者様へ</a>
+                <a href="#">プライバシーポリシー</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-media">
+            <div class="footer-media-label">＼各媒体で物件紹介中／</div>
+            <div class="footer-media-logos">
+              <div class="footer-logo-athome">
+                <img src="img/footer-logo-athome.png" alt="at home">
+              </div>
+              <div class="footer-logo-suumo">
+                <img src="img/footer-logo-suumo.png" alt="SUUMO">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SNSアイコン -->
+        <div class="footer-social">
+          <img src="img/footer-fb.svg" alt="Facebook">
+          <img src="img/footer-instagram.svg" alt="Instagram">
+        </div>
+        <!-- 店舗情報 -->
+        <div class="footer-info">
+          <a href="#mv" class="footer-wh-logo">
+            <img src="img/footer-wh-logo.svg" alt="ホワイトホームズ">
+          </a>
+          <div class="footer-store">
+            <span class="footer-store-tag">本店</span>
+            <div class="footer-store-detail">
+              〒145-0074　東京都大田区東嶺町28-11<br>
+              最寄駅：東急池上線 久が原駅 徒歩1分<br>
+              Tel.0120-63-0481<br>
+              営業時間 9:00-18:00（祝17:00）
+            </div>
+          </div>
+          <div class="footer-store">
+            <span class="footer-store-tag">鵜の木店</span>
+            <div class="footer-store-detail">
+              〒149-0091　東京都大田区鵜の木2-3-9　1-A<br>
+              最寄駅：東急多摩川線 鵜の木駅 徒歩1分<br>
+              Tel.03-3759-1512<br>
+              営業時間 9:00-18:00（祝17:00）
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- コピーライト -->
+      <p class="footer-copyright">Copyright © WHITE HOMES. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Page top ボタン（オレンジエリア外） -->
+  <a href="#" class="page-top">
+    <img class="page-top-arrow" src="img/arrow-page-top.svg" alt="ページトップへ">
+    <span class="page-top-label">Page top</span>
+  </a>
+</div>
+
+<script>
+  // Accordion
+  function toggleAcc(btn) {
+    const item = btn.closest('.accordion-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.accordion-item').forEach(el => {
+      el.classList.remove('open');
+      const b = el.querySelector('.accordion-btn');
+      b.innerHTML = '詳しく見る <img src="img/accordion-open.svg" alt="">';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.innerHTML = '閉じる <img src="img/accordion-close.svg" alt="">';
+    }
+  }
+
+  // Event cards close button
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.mv-pc-evt-corner').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.mv-pc-event-card').style.display = 'none';
+      });
+    });
+    document.querySelectorAll('.mv-sp-evt-corner').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.mv-sp-event-card').style.display = 'none';
+      });
+    });
+  });
+
+  // Hamburger menu
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileNavClose = document.getElementById('mobileNavClose');
+
+  function openMobileNav() {
+    mobileNav.classList.add('open');
+    mobileNav.setAttribute('aria-hidden', 'false');
+    hamburgerBtn.classList.add('is-open');
+    hamburgerBtn.setAttribute('aria-expanded', 'true');
+    hamburgerBtn.setAttribute('aria-label', 'メニューを閉じる');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    hamburgerBtn.classList.remove('is-open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+    hamburgerBtn.setAttribute('aria-label', 'メニューを開く');
+    document.body.style.overflow = '';
+  }
+
+  hamburgerBtn.addEventListener('click', () => {
+    if (mobileNav.classList.contains('open')) {
+      closeMobileNav();
+    } else {
+      openMobileNav();
+    }
+  });
+  mobileNavClose.addEventListener('click', closeMobileNav);
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', closeMobileNav);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+      closeMobileNav();
+    }
+  });
+
+  // Scroll appear animations
+  (function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('[data-anim]').forEach(el => observer.observe(el));
+  })();
+
+  // Count-up animation for ABOUT stats
+  (function () {
+    const DURATION = 1800; // ms
+
+    function easeOutExpo(t) {
+      return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+    }
+
+    function formatNumber(val, decimals, useComma) {
+      let str = decimals > 0 ? val.toFixed(decimals) : Math.round(val).toString();
+      if (useComma) {
+        const parts = str.split('.');
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        str = parts.join('.');
+      }
+      return str;
+    }
+
+    function animateCount(el) {
+      const target = parseFloat(el.dataset.countTo);
+      const decimals = parseInt(el.dataset.decimals || '0', 10);
+      const useComma = el.dataset.format === 'comma';
+      const start = performance.now();
+
+      function step(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / DURATION, 1);
+        const value = easeOutExpo(progress) * target;
+        el.textContent = formatNumber(value, decimals, useComma);
+        if (progress < 1) requestAnimationFrame(step);
+      }
+
+      el.textContent = formatNumber(0, decimals, useComma);
+      requestAnimationFrame(step);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('[data-count-to]').forEach(el => observer.observe(el));
+  })();
+</script>
+
+<!-- Event cards (fixed bottom-right) -->
+<div class="mv-pc-events">
+  <div class="mv-pc-event-card">
+    <div class="mv-pc-evt-month">10月</div>
+    <div class="mv-pc-evt-corner"><img src="img/plus 1.svg" alt="閉じる"></div>
+    <span class="mv-pc-evt-tag">賃貸オーナー様向け</span>
+    <div class="mv-pc-evt-title">
+      <p>不動産経営セミナー開催</p>
+      <p>テーマ：「認知症対策について」</p>
+    </div>
+    <div class="mv-pc-evt-dates">
+      <div class="mv-pc-evt-date"><span class="d-num">8.29</span><span class="d-day">(金)</span></div>
+      <div class="mv-pc-evt-date"><span class="d-num">9.13</span><span class="d-day">(土)</span></div>
+    </div>
+    <a href="#" class="mv-pc-evt-link">
+      詳細をみる
+      <img src="img/arrow-circle-right.svg" alt="→">
+    </a>
+  </div>
+  <div class="mv-pc-event-card">
+    <div class="mv-pc-evt-month">10月</div>
+    <div class="mv-pc-evt-corner"><img src="img/plus 1.svg" alt="閉じる"></div>
+    <span class="mv-pc-evt-tag">賃貸オーナー様向け</span>
+    <div class="mv-pc-evt-title">
+      <p>不動産経営セミナー開催</p>
+      <p>テーマ：「認知症対策について」</p>
+    </div>
+    <div class="mv-pc-evt-dates">
+      <div class="mv-pc-evt-date"><span class="d-num">8.29</span><span class="d-day">(金)</span></div>
+      <div class="mv-pc-evt-date"><span class="d-num">9.13</span><span class="d-day">(土)</span></div>
+    </div>
+    <a href="#" class="mv-pc-evt-link">
+      詳細をみる
+      <img src="img/arrow-circle-right.svg" alt="→">
+    </a>
+  </div>
+</div>
+</body>
+</html>
