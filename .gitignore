@@ -1,29 +1,102 @@
-### Windows
-# Windows thumbnail cache files
+# =====================================================================
+# whitehomes (WP root = repository root)
+# Track only:
+#   - wp-content/themes/whitehomes/
+#   - _design-source/
+#   - .claude/  (settings.local.json は除外)
+#   - CLAUDE.md
+#   - .gitignore
+# Ignore: WordPress core, wp-config, uploads, default themes/plugins, DB dumps, OS/editor junk
+# =====================================================================
+
+### OS junk
 Thumbs.db
-
-# Folder config file
 [Dd]esktop.ini
-
-# Recycle Bin used on file shares
 $RECYCLE.BIN/
-
-# Windows shortcuts
 *.lnk
+.DS_Store
+__MACOSX/
+._*
 
-### VS Code
-# VSCode settings (keep shared configuration)
+### Editors / IDE
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-# Local History for Visual Studio Code
 .history/
-
-# Built Visual Studio Code Extensions
 *.vsix
+.idea/
+*.swp
+*.swo
+*~
 
+### Logs / dumps
+*.log
+error_log
+debug.log
+*.sql
+*.sql.gz
+*.sqlite
+
+### Node (将来用 / 念のため)
+node_modules/
+
+### Claude Code 個人設定
+.claude/settings.local.json
+
+# =====================================================================
+# WordPress 本体ファイル（追跡しない）
+# =====================================================================
+/wp-admin/
+/wp-includes/
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config.php
+/wp-config-sample.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+/index.php
+/license.txt
+/readme.html
+/.htaccess
+
+# =====================================================================
+# wp-content/ — whitehomes テーマだけ追跡
+# =====================================================================
+
+# アップロード / キャッシュ / 自動生成
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/backup-db/
+/wp-content/blogs.dir/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/object-cache.php
+/wp-content/debug.log
+/wp-content/languages/
+
+# プラグイン（必要になったら個別に whitelist する）
+/wp-content/plugins/
+
+# mu-plugins（先回り追跡しない）
+/wp-content/mu-plugins/
+
+# themes/ は whitehomes 以外を無視
+/wp-content/themes/*
+!/wp-content/themes/whitehomes/
+
+# =====================================================================
+# 旧 OneDrive 構成の残骸（念のため）
+# =====================================================================
 website/__MACOSX/
 website/website/

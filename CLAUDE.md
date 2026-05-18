@@ -8,25 +8,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## プロジェクトのゴール
 
-`website/website/website/` 配下にある静的 HTML / CSS / 画像を素材として、株式会社ホワイトホームズの **WordPress クラシックテーマをゼロから構築する**。テーマ構造の作成・カスタムフィールド・メニュー / リンク設定・パーマリンクなど、WordPress 側の設定一式を整える。
+`_design-source/` 配下にある静的 HTML / CSS / 画像を素材として、株式会社ホワイトホームズの **WordPress クラシックテーマをゼロから構築する**。テーマ構造の作成・カスタムフィールド・メニュー / リンク設定・パーマリンクなど、WordPress 側の設定一式を整える。
+
+## 作業ディレクトリ
+
+このリポジトリ（`C:\xampp\htdocs\wordpress\`）は XAMPP の `htdocs` 配下にある **稼働中の WordPress インストール本体**。テーマは `wp-content/themes/whitehomes/` で **直接編集** する（旧構成のシンボリックリンク運用は廃止）。
 
 ## 開発スタック・配置
 
-- **ローカル環境**: XAMPP / MAMP（Apache + MySQL + PHP）。`htdocs` 配下に WordPress 本体を展開する想定。
+- **ローカル環境**: XAMPP（Windows）。WordPress 本体は `C:\xampp\htdocs\wordpress\` に展開済み、`wp-config.php` 設定済み。ローカル URL: `http://localhost/wordpress/`。
 - **テーマ形式**: クラシックテーマ（`functions.php` + `header.php` / `footer.php` / `front-page.php` などの PHP テンプレート分割）。ブロックテーマ / FSE は使わない。
+- **テーマ配置先**: `wp-content/themes/whitehomes/`
+- **デザイン素材**: `_design-source/`（リポジトリ内のリファレンス専用。テーマからは参照しない）
 - **カスタムフィールド**: 必要になった時点で都度判断。まずは標準機能のみで進め、繰り返し編集が必要な箇所が出てきたら ACF / SCF / `register_meta` のどれを使うか検討する。**先回りでプラグインを入れない**。
-- **テーマフォルダの置き場所**: 本リポジトリ内の **別フォルダ**（例: `wordpress/theme/whitehomes/`）でテーマを管理し、XAMPP 側の `htdocs/<site>/wp-content/themes/whitehomes/` へシンボリックリンク（または同期コピー）で反映する。`wp-content/themes/` 直下で直接編集はしない。
 
 ## 素材（静的 HTML）の場所
 
 ```
-wordpress/website/website/website/
+_design-source/
 ├── index-skill-responsive.html   ← 全セクションのマークアップ元
 ├── style.css                     ← テーマ style.css のベース
 └── img/                          ← 画像（assets/img/ などへ移植）
 ```
-
-`wordpress/website/__MACOSX/` は macOS のアーカイブ残骸なので無視。
 
 ## 静的 HTML → クラシックテーマへの分割方針
 
@@ -37,9 +40,9 @@ wordpress/website/website/website/
 - `front-page.php` — トップ用テンプレート。MV / ABOUT / BUSINESS / STRENGTHS / SERVICE / NEWS / STORES / SNS / TORIKUMI / CTA の各セクションを順番に呼び出す。
 - `template-parts/` — セクション単位（`section-mv.php`, `section-about.php`, `section-business.php`, `section-strengths.php`, `section-service.php`, `section-news.php`, `section-stores.php`, `section-sns.php`, `section-torikumi.php`, `section-cta.php` 等）に分け、`get_template_part()` で呼び出す。
 - `functions.php` — テーマセットアップ（`add_theme_support`）、`wp_enqueue_style` / `wp_enqueue_script`、ナビメニュー登録、カスタム投稿タイプ登録（必要になったら）など。
-- `style.css` — 先頭に WordPress テーマヘッダコメント（`Theme Name:` など）を付け、現行 `style.css` の中身をそのまま下に続ける。
+- `style.css` — 先頭に WordPress テーマヘッダコメント（`Theme Name:` など）を付け、現行 `_design-source/style.css` の中身をそのまま下に続ける。
 
-セクション位置の目安は `website/website/website/index-skill-responsive.html` 内の `<!-- ABOUT -->` / `<!-- BUSINESS -->` などのコメントを参照。
+セクション位置の目安は `_design-source/index-skill-responsive.html` 内の `<!-- ABOUT -->` / `<!-- BUSINESS -->` などのコメントを参照。
 
 ## WordPress 側で設定すべき項目（チェックリスト）
 
@@ -56,11 +59,18 @@ wordpress/website/website/website/
 
 ## ローカル開発の流れ
 
-1. XAMPP の Apache / MySQL を起動。`http://localhost/phpmyadmin/` で DB を作成（例: `whitehomes_local`）。
-2. `htdocs/whitehomes/` に WordPress 本体を展開し、ブラウザでセットアップウィザードを実行。
-3. 本リポジトリの `wordpress/theme/whitehomes/` を `htdocs/whitehomes/wp-content/themes/whitehomes/` にシンボリックリンク（PowerShell: `New-Item -ItemType SymbolicLink -Path <dest> -Target <src>`、要管理者）。
-4. 管理画面 → 外観 → テーマ で「whitehomes」を有効化。
-5. 画像は `assets/img/` 配下にコピーし、テンプレートからは `<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/...` で参照。**`img/` 直下の日本語ファイル名はリネームせず維持**（HTML 側参照と一致させる）。
+WordPress 本体・DB は既にセットアップ済み前提。新規環境を立てる場合のみ:
+
+1. XAMPP の Apache / MySQL を起動。`http://localhost/phpmyadmin/` で DB を作成。
+2. WordPress 本体は `C:\xampp\htdocs\wordpress\` に展開（既に展開済み）。
+3. `http://localhost/wordpress/` でセットアップウィザード実行。
+
+通常の開発フロー:
+
+1. XAMPP で Apache / MySQL Start。
+2. `wp-content/themes/whitehomes/` を直接編集。
+3. 管理画面 → 外観 → テーマ で「whitehomes」を有効化（初回のみ）。
+4. 画像は `wp-content/themes/whitehomes/assets/img/` に配置し、テンプレートからは `<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/...` で参照。**`img/` 直下の日本語ファイル名はリネームせず維持**（HTML 側参照と一致させる）。
 
 ## 既存 HTML を移植するときの注意
 
@@ -74,7 +84,13 @@ wordpress/website/website/website/
 
 ## Figma 連携
 
-`website/website/website/.claude/settings.local.json` で Figma MCP サーバ (`figma-developer-mcp`) が事前許可されている。レイアウト確認や差分実装の際は Figma ノードを参照しながら作業する想定。
+`.claude/settings.local.json` で Figma MCP サーバ (`figma-developer-mcp`) が事前許可されている。レイアウト確認や差分実装の際は Figma ノードを参照しながら作業する想定。
+
+## Git 管理について
+
+- このリポジトリは Git 管理されている（`.git/` あり）。
+- `wp-config.php` や `wp-content/uploads/` 等の機微 / 生成物は `.gitignore` で除外する方針。現状の `.gitignore` 内容は要見直し。
+- 大方針: テーマソース（`wp-content/themes/whitehomes/`）・デザイン素材（`_design-source/`）・Claude 設定（`.claude/` `CLAUDE.md`）は追跡。WordPress 本体ファイル（`wp-admin/` `wp-includes/` `wp-config.php` 等）は追跡しない。
 
 ## やらないこと
 

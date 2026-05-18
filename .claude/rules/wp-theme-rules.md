@@ -4,9 +4,10 @@
 
 ## ファイル配置
 
-- テーマ本体は `wordpress/theme/whitehomes/` に置く。`htdocs/.../wp-content/themes/` 直下では編集しない。
-- セクション単位の PHP は `wordpress/theme/whitehomes/template-parts/section-<name>.php`。
-- 画像は `wordpress/theme/whitehomes/assets/img/`、JS は `assets/js/`、追加 CSS は `assets/css/`。
+- テーマ本体は `wp-content/themes/whitehomes/` に直接置く（リポジトリルート = WordPress ルート = `C:\xampp\htdocs\wordpress\`）。シンボリックリンクは使わない。
+- セクション単位の PHP は `wp-content/themes/whitehomes/template-parts/section-<name>.php`。
+- 画像は `wp-content/themes/whitehomes/assets/img/`、JS は `assets/js/`、追加 CSS は `assets/css/`。
+- デザイン素材（リファレンス）は `_design-source/` 配下。テーマからは参照せず、移植元として読むだけ。
 
 ## PHP コーディング
 
@@ -57,5 +58,6 @@
 
 ## コミット / 配布
 
-- 本リポジトリは Git 管理外。コミット運用を始めるなら、まず `git init` の要否をユーザに確認する。
-- `wp-config.php` や DB ダンプはこのリポジトリに置かない。
+- 本リポジトリは Git 管理下（`.git/` 既存）。コミットは通常通り運用可。
+- `wp-config.php` / `wp-content/uploads/` / `wp-admin/` / `wp-includes/` 等 WordPress 本体・機微情報は `.gitignore` で除外する方針。`.gitignore` の見直しが追いついていない場合は、コミット前にステージ内容を確認する。
+- 追跡対象は: `wp-content/themes/whitehomes/`、`_design-source/`、`.claude/`、`CLAUDE.md`、`.gitignore`。
