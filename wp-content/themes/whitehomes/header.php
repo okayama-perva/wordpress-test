@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- HEADER -->
 <header>
 	<div class="header-left">
-		<a href="#mv" class="header-logo-link" aria-label="<?php echo esc_attr__( 'メインビジュアルへ', 'whitehomes' ); ?>">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo-link" aria-label="<?php echo esc_attr__( 'トップページへ', 'whitehomes' ); ?>">
 			<img class="header-logo" src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo.svg' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" width="56" height="49">
 		</a>
 		<nav class="header-nav">
